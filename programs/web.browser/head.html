@@ -1,0 +1,85 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    html {
+      box-sizing: border-box;
+      height: 100%;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      position: fixed;
+      height: 100%;
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      font-size: 1rem; /* 16px */
+      background-color: var(--color-primary);
+      background-image: var(--banner-bg);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    #app {
+      height: 100%;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    .set-z-index {
+      z-index: 15;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .remove-z-index {
+      z-index: 0;
+    }
+    /* .full-screen {
+      height: 100% !important;
+      width: 100% !important;
+      transform: translateX(0) translateY(0) translateZ(0) !important;
+    } */
+
+    [hidden]:not([hidden="false"]) {
+      display: none !important;
+    }
+  </style>
+  <script>
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  <script src="compatibility/adapter.js?v=VERSION" language="javascript"></script>
+  <script src="compatibility/sip.js?v=VERSION" language="javascript"></script>
+  <script src="compatibility/kurento-utils.js?v=VERSION" language="javascript"></script>
+  <!-- fonts -->
+  <link rel="preload" href="fonts/BbbIcons/bbb-icons.woff?j1ntjp" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-Light.woff" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-Regular.woff" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-Semibold.woff" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-Bold.woff" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-LightItalic.woff" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-Italic.woff" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-SemiboldItalic.woff" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/SourceSansPro/SourceSansPro-BoldItalic.woff" as="font" crossorigin="anonymous"/>
+  <!-- fonts -->
